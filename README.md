@@ -4,6 +4,8 @@ Console application that shows information about Windows audio devices.
 
 ## Example
 
+For each found audio device, such a block is printed:
+
 ```
 ID                                 {0.0.0.00000000}.{578ef63a-0c08-4ea1-b4bb-17cc992ca64e}
 State                              DEVICE_STATE_ACTIVE
@@ -22,3 +24,8 @@ Build the solution file with Visual Studio (2022).
 ## Run
 
 Run the built `AudioDeviceInfo.exe` in a terminal. Output is printed to standard out.
+
+e.g. in PowerShell:
+```
+.\AudioDeviceInfo.exe > AudioDeviceInfo.txt
+```
