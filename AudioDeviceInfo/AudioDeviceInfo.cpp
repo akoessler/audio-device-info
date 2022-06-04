@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <combaseapi.h>
+#include <algorithm>
 
 #include "AudioFunctions.h"
 
@@ -20,6 +21,7 @@ int main()
 	}
 
 	auto devices = GetAudioDevices();
+	sort(devices.begin(), devices.end());
 
 	for (auto& device : devices)
 	{

@@ -4,6 +4,7 @@
 #include <mmdeviceapi.h>
 #include <Functiondiscoverykeys_devpkey.h>
 #include <propvarutil.h>
+#include <unordered_map>
 
 #include "AudioFunctions.h"
 

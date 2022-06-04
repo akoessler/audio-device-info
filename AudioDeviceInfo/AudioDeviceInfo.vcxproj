@@ -144,10 +144,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioDevice.cpp" />
     <ClCompile Include="AudioDeviceInfo.cpp" />
     <ClCompile Include="AudioFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioDevice.h" />
     <ClInclude Include="AudioFunctions.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
