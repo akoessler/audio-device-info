@@ -8,11 +8,16 @@ bool AudioDevice::operator<(AudioDevice& other)
 	if (state < other.state) return true;
 	if (state > other.state) return false;
 
-	for (auto& propFirst : properties)
+	for (auto& prop : properties)
 	{
-		auto& propSecond = *find_if(other.properties.begin(), other.properties.end(), [&](auto& x) { return x.first == propFirst.first; });
-		if (propFirst.first < propSecond.first) return true;
-		if (propFirst.first > propSecond.first) return false;
+		if (prop.first.find("GUID") != std::string::npos)
+		{
+			continue;
+		}
+
+		auto& propOther = *find_if(other.properties.begin(), other.properties.end(), [&](auto& x) { return x.first == prop.first; });
+		if (prop.second < propOther.second) return true;
+		if (prop.second > propOther.second) return false;
 	}
 
 	return false;
