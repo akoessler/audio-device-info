@@ -51,8 +51,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,1
- PRODUCTVERSION 1,0,1
+ FILEVERSION 1,0,2
+ PRODUCTVERSION 1,0,2
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -69,12 +69,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "github@akoessler.com"
             VALUE "FileDescription", "Console application that shows information about Windows audio devices."
-            VALUE "FileVersion", "1.0.1"
+            VALUE "FileVersion", "1.0.2"
             VALUE "InternalName", "AudioDeviceInfo.exe"
             VALUE "LegalCopyright", "Copyright (C) 2022"
             VALUE "OriginalFilename", "AudioDeviceInfo.exe"
             VALUE "ProductName", "Audio Device Info"
-            VALUE "ProductVersion", "1.0.1"
+            VALUE "ProductVersion", "1.0.2"
         END
     END
     BLOCK "VarFileInfo"
